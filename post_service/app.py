@@ -14,8 +14,6 @@ posts = {
 
 # Function to generate a unique post ID
 def generate_post_id():
-    if not posts:
-        return 1
     return max(posts.keys()) + 1
 
 
