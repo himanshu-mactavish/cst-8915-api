@@ -21,7 +21,7 @@ def generate_post_id():
 def get_user_info(user_id):
     user_service_url = "http://0.0.0.0:5000/users/" + str(
         user_id
-    )  # Replace with the actual host
+    ) 
     response = requests.get(user_service_url)
     return response.json() if response.status_code == 200 else None
 
